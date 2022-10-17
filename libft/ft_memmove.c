@@ -38,7 +38,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }
-
+/*
 int main(void)
 {
     char str1[] = "dajenissss";
@@ -49,7 +49,7 @@ int main(void)
     printf("%s", ret);
     return (0);
 }
-
+*/
 /*
 int main(void)
 {

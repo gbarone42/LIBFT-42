@@ -5,14 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: gbarone <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/12 21:46:03 by gbarone           #+#    #+#             */
-/*   Updated: 2022/10/12 21:46:07 by gbarone          ###   ########.fr       */
+/*   Created: 2022/10/17 12:50:31 by gbarone           #+#    #+#             */
+/*   Updated: 2022/10/17 12:51:02 by gbarone          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-#include <stdlib.h>
-#include <string.h>
+#include "libft.h"
 
 void	*ft_calloc(size_t count, size_t size)
 {
@@ -30,4 +28,3 @@ void	*ft_calloc(size_t count, size_t size)
 	}
 	return (memory);
 }
-

@@ -39,7 +39,7 @@ int	ft_atoi(const char *str)
 		i = i * -1;
 	return (i);
 }
-
+/*
 int main()
 {
     char* s1 = "000";   
@@ -58,4 +58,4 @@ int main()
     printf("%d\n", num4);
 
     return 0;
-}
+}*/

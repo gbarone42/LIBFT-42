@@ -1,31 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gbarone <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/05 16:19:33 by gbarone           #+#    #+#             */
-/*   Updated: 2022/10/05 16:24:24 by gbarone          ###   ########.fr       */
+/*   Created: 2022/10/14 01:23:11 by gbarone           #+#    #+#             */
+/*   Updated: 2022/10/14 01:23:15 by gbarone          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
 #include "libft.h"
 
-int	ft_isalnum(int c)
+void	ft_putstr_fd(char *s, int fd)
 {
-	if ((c >= 'a' && c <= 'z')
-		|| (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9'))
-		return (1);
-	return (0);
-}
+	size_t	i;
 
-/*int	main ( )
-{  
-        int a ;
-        char b ;
-        a = 1 ;
-        b = 'p' ;
-        printf ( " %d \n %d " , a , ft_isalnum(b)) ;
-}*/
+	i = 0;
+	while (s[i])
+	{
+		ft_putchar_fd(s[i], fd);
+		i++;
+	}
+}

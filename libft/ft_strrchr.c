@@ -10,30 +10,30 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+//#include <stdio.h>
+//#include <string.h>
+#include "libft.h"
 
-#include <stdio.h>
-#include <string.h>
-
-char    *ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
-    const char    *first_s;
+	const char	*first_s;
 
-    first_s = s;
-    while (*s)
-        s++;
-    while (s >= first_s)
-    {
-        if (*s == (char)c)
-            return ((char *)s);
-        s--;
-    }
-    return (NULL);
+	first_s = s;
+	while (*s)
+		s++;
+	while (s >= first_s)
+	{
+		if (*s == (char)c)
+			return ((char *)s);
+		s--;
+	}
+	return (NULL);
 }
-
+/*
 int    main(void)
 {
   int c = 'g';
     printf("%s\n", ft_strrchr("abcdefghilmnopqrstuvz", c));
     printf("%s\n", strrchr("abcdefghilmnopqrstuvz", c));
     return (0);
-}
+}*/

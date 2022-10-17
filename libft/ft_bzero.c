@@ -1,31 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gbarone <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/05 16:19:33 by gbarone           #+#    #+#             */
-/*   Updated: 2022/10/05 16:24:24 by gbarone          ###   ########.fr       */
+/*   Created: 2022/10/11 21:31:16 by gbarone           #+#    #+#             */
+/*   Updated: 2022/10/11 21:31:18 by gbarone          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+//#include <string.h>
 //#include <stdio.h>
 #include "libft.h"
 
-int	ft_isalnum(int c)
+void	ft_bzero(void *s, size_t n)
 {
-	if ((c >= 'a' && c <= 'z')
-		|| (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9'))
-		return (1);
-	return (0);
-}
+	size_t			i;
+	unsigned char	*r;
 
-/*int	main ( )
-{  
-        int a ;
-        char b ;
-        a = 1 ;
-        b = 'p' ;
-        printf ( " %d \n %d " , a , ft_isalnum(b)) ;
+	r = (unsigned char *)s;
+	i = 0;
+	while (n > 0)
+	{
+		r[i] = '\0';
+		i++;
+		n--;
+	}
+}
+/*
+int main()
+ {
+         char s[10] = "ciaoo";
+         char t[10] = "ciaoo";
+         ft_bzero(s+ 2 , 4);
+         bzero(t+ 2, 4);
+         puts(s);
+         puts(t);
 }*/

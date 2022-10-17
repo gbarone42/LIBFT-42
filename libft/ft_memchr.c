@@ -1,31 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gbarone <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/05 16:19:33 by gbarone           #+#    #+#             */
-/*   Updated: 2022/10/05 16:24:24 by gbarone          ###   ########.fr       */
+/*   Created: 2022/10/09 21:02:50 by gbarone           #+#    #+#             */
+/*   Updated: 2022/10/09 21:03:00 by gbarone          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include <stdio.h>
+//#include <string.h>
 #include "libft.h"
 
-int	ft_isalnum(int c)
+void	*ft_memchr(const void	*s, int c, size_t n)
 {
-	if ((c >= 'a' && c <= 'z')
-		|| (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9'))
-		return (1);
+	unsigned char	*s1;
+	size_t			i;
+
+	s1 = (unsigned char *)s;
+	i = 0;
+	while (i < n)
+	{
+		if (s1[i] == (unsigned char)c)
+			return ((void *)&s1[i]);
+		i++;
+	}
 	return (0);
 }
+/*
+int main(void)
+{
+    char  str[] = "www.42seoul.kr";
 
-/*int	main ( )
-{  
-        int a ;
-        char b ;
-        a = 1 ;
-        b = 'p' ;
-        printf ( " %d \n %d " , a , ft_isalnum(b)) ;
+
+
+    printf("%s\n", ft_memchr(str, '.', 12));
+    printf("%s\n", ft_memchr(str, 'k', 14));
+    return 0;
 }*/

@@ -1,31 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gbarone <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/05 16:19:33 by gbarone           #+#    #+#             */
-/*   Updated: 2022/10/05 16:24:24 by gbarone          ###   ########.fr       */
+/*   Created: 2022/10/12 21:47:17 by gbarone           #+#    #+#             */
+/*   Updated: 2022/10/12 21:47:54 by gbarone          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
-#include "libft.h"
 
-int	ft_isalnum(int c)
+#include <stdlib.h>
+
+char	*ft_strdup(const char *s)
 {
-	if ((c >= 'a' && c <= 'z')
-		|| (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9'))
-		return (1);
-	return (0);
-}
+	char	*new;
+	int		i;
+	int		size;
 
-/*int	main ( )
-{  
-        int a ;
-        char b ;
-        a = 1 ;
-        b = 'p' ;
-        printf ( " %d \n %d " , a , ft_isalnum(b)) ;
-}*/
+	size = 0;
+	while (s[size])
+		++size;
+	if (!(new = malloc(sizeof(char) * (size + 1))))
+		return (NULL);
+	i = 0;
+	while (s[i])
+	{
+		new[i] = s[i];
+		i++;
+	}
+	new[i] = '\0';
+	return (new);
+}

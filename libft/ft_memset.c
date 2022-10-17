@@ -5,13 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: gbarone <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/05 16:46:14 by gbarone           #+#    #+#             */
-/*   Updated: 2022/10/05 16:46:16 by gbarone          ###   ########.fr       */
+/*   Created: 2022/10/11 16:57:46 by gbarone           #+#    #+#             */
+/*   Updated: 2022/10/11 16:57:48 by gbarone          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+//#include <stdio.h>
+//#include <string.h>
+#include "libft.h"
 
 void	*ft_memset(void *b, int c, size_t len)
 {
@@ -24,7 +25,7 @@ void	*ft_memset(void *b, int c, size_t len)
 		ptr[i++] = (unsigned char)c;
 	return (b);
 }
-
+/*
 int main()
 {      char s[15] = "mamma mia";
                   
@@ -35,4 +36,4 @@ int main()
 	memset(&t[7] , 108 , 3);
 	printf("mio: %s | loro: %s", s ,t);
 }
-	
+	*/

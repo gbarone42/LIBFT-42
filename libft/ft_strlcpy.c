@@ -1,17 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gbarone <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/05 20:38:29 by gbarone           #+#    #+#             */
-/*   Updated: 2022/10/05 20:39:06 by gbarone          ###   ########.fr       */
+/*   Created: 2022/10/11 16:53:49 by gbarone           #+#    #+#             */
+/*   Updated: 2022/10/11 16:53:52 by gbarone          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdio.h>
 
-int	ft_strlen(char *str)
+//#include <stdio.h>
+#include "libft.h"
+/*
+int	ft_strlen(const char *str)
 {
 	int	i;
 
@@ -19,9 +21,9 @@ int	ft_strlen(char *str)
 	while (str[i] != '\0')
 		i++;
 	return (i);
-}
+}*/
 
-unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
+size_t	ft_strlcpy(char *dest, char *src, size_t size)
 {
 	unsigned int	i;
 	unsigned int	z;
@@ -39,16 +41,14 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 	}
 	return (z);
 }
-
+/*
 int	main()
 {
 	char src[] = "World";
 	char dest[] = "Hello ";
 	printf("%d", ft_strlcpy(dest, src, 6));
 }
-
-
-
+*/
 /*
 #include "libft.h"
 

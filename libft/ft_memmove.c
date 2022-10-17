@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
-#include <stdio.h>
-#include <string.h>
+//#include <stdio.h>
+//#include <string.h>
+#include "libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
@@ -24,17 +24,33 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	d = (char *)dst;
 	i = 0;
 	if (d > s)
+	{
 		while (len-- > 0)
 			d[len] = s[len];
+	}
 	else
+	{
 		while (i < len)
 		{
 			d[i] = s[i];
 			i++;
 		}
+	}
 	return (dst);
 }
 
+int main(void)
+{
+    char str1[] = "dajenissss";
+    char str2[] = "dajenissss";
+    char *ret;
+
+    ret = ft_memmove(str1, str2 + 2, 3);
+    printf("%s", ret);
+    return (0);
+}
+
+/*
 int main(void)
 {
 	char str1[50];
@@ -44,4 +60,17 @@ int main(void)
 	ret = ft_memmove(str1, str2, 3);
 	printf("%s", ret);
 	return (0);
-}
+}*/
+
+/* questo forse e' un main un po' meglio
+
+int main(void)
+{
+    char str1[50] = "abcde";
+    char str2[50] = "daj";
+    char *ret;
+
+    ret = ft_memmove(str1, str1 + 2, 5);
+    printf("%s", ret);
+    return (0);
+}*/

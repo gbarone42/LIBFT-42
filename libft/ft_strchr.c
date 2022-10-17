@@ -10,8 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+//#include <stdio.h>
+//#include <string.h>
+#include "libft.h"
 
 char	*ft_strchr(const char *str, int c)
 {
@@ -21,13 +22,13 @@ char	*ft_strchr(const char *str, int c)
 			return (0);
 		str++;
 	}
-	return ((char*)str);
+	return ((char *)str);
 }
-
+/*
 int	main(void)
 {
   int c = 'a';
 	printf("%s\n", ft_strchr("saikebon", c));
 	printf("%s\n", strchr("saikebon", c));
 	return (0);
-}
+}*/

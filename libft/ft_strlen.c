@@ -10,9 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+//#include <stdio.h>
+#include "libft.h"
 
-int	ft_strlen(char *str)
+size_t	ft_strlen(const char *str)
 {
 	int	i;
 
@@ -21,7 +22,7 @@ int	ft_strlen(char *str)
 		i++;
 	return (i);
 }
-
+/*
 int	main(void)
 {
 	char	str[99] = "wf";
@@ -29,4 +30,4 @@ int	main(void)
 	i = ft_strlen(str);
 	printf("%d", i);
 	return (0);
-}
+}*/

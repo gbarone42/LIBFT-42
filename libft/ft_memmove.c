@@ -14,6 +14,30 @@
 //#include <string.h>
 #include "libft.h"
 
+void	*ft_memmove(void *dest, const void *src, size_t n)
+{
+	char		*s1;
+	const char	*s2;
+	size_t		y;
+
+	s1 = (char *)dest;
+	s2 = (const char *)src;
+	y = 0;
+	if (dest > src)
+	{
+		while (y < n)
+		{
+			s1[n - y - 1] = s2[n - y - 1];
+			y++;
+		}
+	}
+	else
+	{
+		ft_memcpy(s1, s2, n);
+	}
+	return (dest);
+}
+/*forse boh e' quello di prima
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	char	*s;
@@ -37,7 +61,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 		}
 	}
 	return (dst);
-}
+}*/
 /*
 int main(void)
 {

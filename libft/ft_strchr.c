@@ -14,6 +14,18 @@
 //#include <string.h>
 #include "libft.h"
 
+char	*ft_strchr(const char *s, int c)
+{
+	while (*s != (char)c)
+	{
+		if (*s == '\0')
+			return (NULL);
+		s++;
+	}
+	return ((char *)s);
+}
+/*
+questa e' quella che non tornava
 char	*ft_strchr(const char *str, int c)
 {
 	while (*str != c)
@@ -23,7 +35,7 @@ char	*ft_strchr(const char *str, int c)
 		str++;
 	}
 	return ((char *)str);
-}
+}*/
 /*
 int	main(void)
 {

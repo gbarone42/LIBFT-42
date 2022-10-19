@@ -1,29 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gbarone <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/14 01:29:22 by gbarone           #+#    #+#             */
-/*   Updated: 2022/10/14 01:29:27 by gbarone          ###   ########.fr       */
+/*   Created: 2022/10/19 18:32:27 by gbarone           #+#    #+#             */
+/*   Updated: 2022/10/19 18:32:48 by gbarone          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putendl_fd(char *s, int fd)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	unsigned int	k;
-
+	char	*j;
+	size_t	y;
+	size_t	k;
+	
+	j = malloc(sizeof(char) * ft_strlen(s) + 1);
+	if (j == 0)
+	{	
+		return(0);
+	}
+	y = 0;
 	k = 0;
-	write(fd, &s[k], ft_strlen(s));
-	write(fd, &"\n", 1);
+	if ((unsigned int)ft_strlen(s) < start)
+		return (ft_strdup(""));
+	while (s[y] && y < start)
+	{
+		y++;
+	}
+	while (s[y] != '\0' && (int)len > 0)
+	{
+		j[k] = s[y];
+		y++;
+		k++;
+		len--;
+	}
+	j[k] = '\0';
+	if (s[y] < j[k])
+		return (NULL);
+	return (j);
 }
-
-/*
-void	ft_putendl_fd(char *s, int fd)
-{
-	ft_putstr_fd(s, fd);
-	ft_putchar_fd('\n', fd);
-}*/

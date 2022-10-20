@@ -29,6 +29,8 @@ ft_putnbr_fd.c\
 ft_strdup.c\
 ft_calloc.c\
 ft_substr.c\
+ft_striteri.c\
+ft_strmapi.c\
 
 OBJS = ${SRCS:.c=.o}
 

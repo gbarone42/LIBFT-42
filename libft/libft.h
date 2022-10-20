@@ -55,7 +55,7 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
-//char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 //char	**ft_split(char const *s, char c);
 //void	ft_lstadd_front(t_list **alst, t_list *new);
 //t_list	*ft_lstnew(void *content);
@@ -66,6 +66,6 @@ void	ft_putnbr_fd(int n, int fd);
 //void	ft_lstdelone(t_list *lst, void (*del)(void*));
 //void	ft_lstiter(t_list *lst, void (*f)(void *));
 //t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
-//void	ft_striteri(char *s, void (*f)(unsigned int, char *));
+void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 
 #endif

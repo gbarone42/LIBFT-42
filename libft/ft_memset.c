@@ -25,15 +25,15 @@ void	*ft_memset(void *b, int c, size_t len)
 		ptr[i++] = (unsigned char)c;
 	return (b);
 }
-/*
+
 int main()
 {      char s[15] = "mamma mia";
                   
         char t[15] = "mamma mia";
 
-	ft_memset(&s[7] , 108 , 3);
+	ft_memset(&s[7] , 88 , 6);
 	//memset(t + 7, 108 , 3);
 	memset(&t[7] , 108 , 3);
 	printf("mio: %s | loro: %s", s ,t);
 }
-	*/
+

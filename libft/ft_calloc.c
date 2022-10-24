@@ -13,6 +13,22 @@
 #include "libft.h"
 
 void	*ft_calloc(size_t count, size_t size)
+
+{
+	void	*p;
+	size_t	y;
+
+	y = size * nmemb;
+	if (nmemb != 0 && size != y / nmemb)
+		return (NULL);
+	p = (void *)malloc(y);
+	if (p == NULL)
+		return (NULL);
+	ft_bzero(p, y);
+	return (p);
+}
+
+/*
 {
 	char	*memory;
 	size_t	i;
@@ -27,4 +43,4 @@ void	*ft_calloc(size_t count, size_t size)
 		i++;
 	}
 	return (memory);
-}
+}*/

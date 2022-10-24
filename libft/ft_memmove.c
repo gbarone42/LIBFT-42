@@ -86,8 +86,8 @@ int main(void)
 	return (0);
 }*/
 
-/* questo forse e' un main un po' meglio
-
+// questo forse e' un main un po' meglio
+/*
 int main(void)
 {
     char str1[50] = "abcde";
@@ -98,3 +98,12 @@ int main(void)
     printf("%s", ret);
     return (0);
 }*/
+
+int main () {
+   const char src[50] = "abcdefghijk";
+   char dest[50] = "0123456789";
+   printf("Before memmove dest = %s\n", dest);
+   ft_memmove(&dest, &src, sizeof(char) * 9);
+   printf("After memmove dest = %s\n", dest);
+} 
+

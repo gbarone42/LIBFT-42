@@ -14,6 +14,24 @@
 //#include <string.h>
 #include "libft.h"
 
+
+char	*ft_strrchr(const char *s, int c)
+{
+	const char	*p;
+
+	p = NULL;
+	while (*s)
+	{
+		if (*s == (char)c)
+			p = s;
+		s++;
+	}
+	if ((char)c == '\0')
+		p = s;
+	return ((char *)p);
+}
+
+/*
 char	*ft_strrchr(const char *s, int c)
 {
 	const char	*first_s;
@@ -29,11 +47,11 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (NULL);
 }
-/*
+*/
 int    main(void)
 {
-  int c = 'g';
+  int c = 'f';
     printf("%s\n", ft_strrchr("abcdefghilmnopqrstuvz", c));
     printf("%s\n", strrchr("abcdefghilmnopqrstuvz", c));
     return (0);
-}*/
+}

@@ -74,3 +74,12 @@ int main(void)
 	printf("%s", dst);
 	return (0);
 }*/
+
+
+ int main () {
+   const char src[50] = "abcdefghijk";
+   char dest[50] = "0123456789";
+   printf("Before memmove dest = %s\n", dest);
+   ft_memcpy(&dest, &src, sizeof(char) * 9);
+   printf("After memmove dest = %s\n", dest);
+} 

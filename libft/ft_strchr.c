@@ -36,11 +36,11 @@ char	*ft_strchr(const char *str, int c)
 	}
 	return ((char *)str);
 }*/
-/*
+
 int	main(void)
 {
-  int c = 'a';
-	printf("%s\n", ft_strchr("saikebon", c));
+  int c = 'f';
+	printf("%s\n", ft_strchr("abcdefghilmnopqrstuvz", c));
 	printf("%s\n", strchr("saikebon", c));
 	return (0);
-}*/
+}

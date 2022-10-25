@@ -31,6 +31,9 @@ ft_calloc.c\
 ft_substr.c\
 ft_striteri.c\
 ft_strmapi.c\
+ft_atoi.c\
+ft_strjoin.c\
+ft_split.c\
 
 OBJS = ${SRCS:.c=.o}
 

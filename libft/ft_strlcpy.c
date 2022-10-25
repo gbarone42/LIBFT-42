@@ -41,14 +41,14 @@ size_t	ft_strlcpy(char *dest, char *src, size_t size)
 	}
 	return (z);
 }
-/*
+
 int	main()
 {
-	char src[] = "World";
-	char dest[] = "Hello ";
-	printf("%d", ft_strlcpy(dest, src, 6));
+	char src[] = "Woeeee";
+	char dest[] = "ssss";
+	printf("%ld", ft_strlcpy(dest, src, 9));
 }
-*/
+
 /*
 #include "libft.h"
 

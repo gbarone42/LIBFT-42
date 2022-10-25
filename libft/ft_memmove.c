@@ -88,7 +88,11 @@ int main(void)
 }
 
 // questo forse e' un main un po' meglio
+<<<<<<< HEAD
 
+=======
+/*
+>>>>>>> 2b9e459c4446ffb67045f9d04bd26a8f0659423f
 int main(void)
 {
     char str1[50] = "abcde";
@@ -98,10 +102,16 @@ int main(void)
     ret = ft_memmove(str1, str1 + 2, 5);
     printf("%s", ret);
     return (0);
+<<<<<<< HEAD
 }
 */
 int main () 
 {
+=======
+}*/
+
+int main () {
+>>>>>>> 2b9e459c4446ffb67045f9d04bd26a8f0659423f
    const char src[50] = "abcdefghijk";
    char dest[50] = "0123456789";
    printf("Before memmove dest = %s\n", dest);

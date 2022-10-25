@@ -75,11 +75,19 @@ int main(void)
 	return (0);
 }*/
 
+<<<<<<< HEAD
 /*
+=======
+
+>>>>>>> 2b9e459c4446ffb67045f9d04bd26a8f0659423f
  int main () {
    const char src[50] = "abcdefghijk";
    char dest[50] = "0123456789";
    printf("Before memmove dest = %s\n", dest);
    ft_memcpy(&dest, &src, sizeof(char) * 9);
    printf("After memmove dest = %s\n", dest);
+<<<<<<< HEAD
 } */
+=======
+} 
+>>>>>>> 2b9e459c4446ffb67045f9d04bd26a8f0659423f

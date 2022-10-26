@@ -27,15 +27,19 @@ ft_putendl_fd.c\
 ft_strtrim.c\
 ft_putnbr_fd.c\
 ft_strdup.c\
-ft_calloc.c\
 ft_substr.c\
 ft_striteri.c\
 ft_strmapi.c\
-ft_atoi.c\
+ft_itoa.c\
 ft_strjoin.c\
-ft_split.c\
+ft_calloc.c\
+
+SRC_BONUS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c \
+             ft_lstadd_back.c \
 
 OBJS = ${SRCS:.c=.o}
+
+OBJ_BONUS = $(SRC_BONUS:.c=.o)
 
 CC		= gcc
 RM		= rm -f
@@ -54,3 +58,7 @@ fclean:	clean
 		${RM} ${NAME}
 
 re:		fclean all
+
+bonus: $(OBJS) $(OBJ_BONUS)
+	ar -crs $(NAME) $(OBJS) $(OBJ_BONUS)
+

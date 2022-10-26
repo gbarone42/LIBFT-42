@@ -14,7 +14,6 @@
 //#include <string.h>
 #include "libft.h"
 
-
 char	*ft_strrchr(const char *s, int c)
 {
 	const char	*p;
@@ -30,28 +29,11 @@ char	*ft_strrchr(const char *s, int c)
 		p = s;
 	return ((char *)p);
 }
-
 /*
-char	*ft_strrchr(const char *s, int c)
-{
-	const char	*first_s;
-
-	first_s = s;
-	while (*s)
-		s++;
-	while (s >= first_s)
-	{
-		if (*s == (char)c)
-			return ((char *)s);
-		s--;
-	}
-	return (NULL);
-}
-*/
 int    main(void)
 {
   int c = 'f';
     printf("%s\n", ft_strrchr("abcdefghilmnopqrstuvz", c));
     printf("%s\n", strrchr("abcdefghilmnopqrstuvz", c));
     return (0);
-}
+}*/

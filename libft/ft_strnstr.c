@@ -35,7 +35,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (0);
 }
-
+/*
 int main()
 {
     char s1[30] = "peppopipepiness ss!";
@@ -45,4 +45,4 @@ int main()
     char* ptr1 = ft_strnstr(s1, "pine", 30);
     printf("%s\n", ptr1);
     return (0);
-}
+}*/

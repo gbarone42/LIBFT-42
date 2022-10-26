@@ -36,7 +36,7 @@ char	*ft_strchr(const char *str, int c)
 	}
 	return ((char *)str);
 }*/
-
+/*
 int	main(void)
 {
   int c = 'f';
@@ -44,3 +44,4 @@ int	main(void)
 	printf("%s\n", strchr("saikebon", c));
 	return (0);
 }
+*/

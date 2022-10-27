@@ -25,3 +25,9 @@ void	*ft_memset(void *b, int c, size_t len)
 		ptr[i++] = (unsigned char)c;
 	return (b);
 }
+
+ int main(){
+	char x[] = "aaaaaaa";
+	ft_memset(&x, 'r', sizeof(char) * 2);
+	printf("%s\n", x);
+} 

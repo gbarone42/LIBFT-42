@@ -18,17 +18,17 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	char		*s1;
 	const char	*s2;
-	size_t		y;
+	size_t		j;
 
 	s1 = (char *)dest;
 	s2 = (const char *)src;
-	y = 0;
+	j = 0;
 	if (dest > src)
 	{
-		while (y < n)
+		while (j < n)
 		{
-			s1[n - y - 1] = s2[n - y - 1];
-			y++;
+			s1[n - j - 1] = s2[n - j - 1];
+			j++;
 		}
 	}
 	else
@@ -37,3 +37,11 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+
+int main () {
+   const char src[50] = "abcdefghijk";
+   char dest[50] = "0123456789";
+   printf("Before memmove dest = %s\n", dest);
+   ft_memmove(&dest, &src, sizeof(char) * 2);
+   printf("After memmove dest = %s\n", dest);
+} 

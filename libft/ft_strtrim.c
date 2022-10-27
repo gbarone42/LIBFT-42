@@ -126,10 +126,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 		p[i] = s1[s + i];
 	return (p);
 }
-
+*/
 int	main()
 {
-	const char s[] = "12915231uoh";
-	const char set[] = "abc";
+	const char s[] = "abcdefghi";
+	const char set[] = "cde";
 	printf("%s\n", ft_strtrim(s, set));
-} */
+}

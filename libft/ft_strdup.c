@@ -50,3 +50,10 @@ char	*ft_strdup(const char *s)
 	new[i] = '\0';
 	return (new);
 }*/
+
+int main()
+{
+	const char s[] = "lorem ipsum dolor sit amet";
+	printf("%s\n", ft_strdup(s));
+}
+

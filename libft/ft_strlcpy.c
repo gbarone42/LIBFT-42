@@ -41,6 +41,13 @@ size_t	ft_strlcpy(char *dest, char *src, size_t size)
 	}
 	return (z);
 }
+
+
+ int main () {
+   const char src[50] = "abcdefghijkl";
+   char dest[50] = "0123456789";
+   printf("size = %ld\n%s\n", ft_strlcpy(dest, src, sizeof(char) * 10), dest);
+} 
 /*
 int	main()
 {

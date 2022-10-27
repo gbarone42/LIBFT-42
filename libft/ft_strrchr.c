@@ -29,11 +29,11 @@ char	*ft_strrchr(const char *s, int c)
 		p = s;
 	return ((char *)p);
 }
-/*
+
 int    main(void)
 {
   int c = 'f';
-    printf("%s\n", ft_strrchr("abcdefghilmnopqrstuvz", c));
+    printf("%s\n", ft_strrchr("abcdefghilmnopqfrstuvz", c));
     printf("%s\n", strrchr("abcdefghilmnopqrstuvz", c));
     return (0);
-}*/
+}

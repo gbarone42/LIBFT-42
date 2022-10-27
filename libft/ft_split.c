@@ -11,3 +11,39 @@
 /* ************************************************************************** */
 
 
+#include "libft.h"
+
+char **ft_split(char const *s, char c)
+
+{
+char **p //nuovo  puntatotre
+ int i
+ i=0
+ p= malloc(sizeof(char) + 1;
+ j=0
+ 
+ while ( s[i] != "\0")
+ {
+	 while (s[i] == c )
+ 	{
+ 		i++
+ 	}	
+ 
+ 		while( s[i]!= c  && s[i] != "\0")
+		{
+			s[i] = p[i]
+			
+			i++
+	
+		}
+
+ } 
+	
+		return(p)
+
+
+
+
+
+
+}

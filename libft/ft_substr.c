@@ -39,3 +39,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (NULL);
 	return (j);
 }
+
+ int main()
+{
+	const char *s = "andppsssldffflaaa";
+	printf("%s\n", ft_substr(s, 12, 2));
+} 

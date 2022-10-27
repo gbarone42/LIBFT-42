@@ -36,3 +36,10 @@ char	*ft_strjoin(const char *s1, const char *s2)
 	l[p + k] = '\0';
 	return (l);
 }
+
+ int main()
+{
+	const char *s1 = "abcd";
+	const char *s2 = "efgh";
+	printf("%s\n", ft_strjoin(s1, s2));
+} 

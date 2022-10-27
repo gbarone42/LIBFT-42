@@ -30,3 +30,13 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+
+ int main () 
+{
+   const char src[50] = "abcdefghijk";
+   char dest[50] = "0123456789";
+   printf("Before = %s\n", dest);
+   ft_memcpy(&dest, &src, sizeof(char) * 9);
+   printf("After = %s\n", dest);
+} 
+

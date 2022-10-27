@@ -29,6 +29,7 @@ void	*ft_memchr(const void	*s, int c, size_t n)
 	}
 	return (0);
 }
+
 /*
 
 void	*ft_memchr(const void *s, int c, size_t n)
@@ -48,7 +49,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 
 
 */
-/*
+
 int main(void)
 {
     char  str[] = "www.42seoul.kr";
@@ -58,4 +59,4 @@ int main(void)
     printf("%s\n", ft_memchr(str, '.', 12));
     printf("%s\n", ft_memchr(str, 'k', 14));
     return 0;
-}*/
+}

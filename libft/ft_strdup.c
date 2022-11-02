@@ -30,30 +30,9 @@ char	*ft_strdup(const char *s)
 	return (y);
 }
 /*
-char	*ft_strdup(const char *s)
-{
-	char	*new;
-	int		i;
-	int		size;
-
-	size = 0;
-	while (s[size])
-		++size;
-	if (!(new = malloc(sizeof(char) * (size + 1))))
-		return (NULL);
-	i = 0;
-	while (s[i])
-	{
-		new[i] = s[i];
-		i++;
-	}
-	new[i] = '\0';
-	return (new);
-}*/
-
 int main()
 {
 	const char s[] = "lorem ipsum dolor sit amet";
 	printf("%s\n", ft_strdup(s));
 }
-
+*/

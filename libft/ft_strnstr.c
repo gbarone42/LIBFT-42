@@ -10,8 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
-//#include <string.h>
 #include "libft.h"
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
@@ -35,7 +33,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (0);
 }
-
+/*
 int main()
 {
     char s1[30] = "peppopipepineess ss!";
@@ -46,3 +44,4 @@ int main()
     printf("%s\n", ptr1);
     return (0);
 }
+*/

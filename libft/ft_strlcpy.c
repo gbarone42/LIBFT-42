@@ -10,20 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
 #include "libft.h"
-/*
-int	ft_strlen(const char *str)
-{
-	int	i;
 
-	i = 0;
-	while (str[i] != '\0')
-		i++;
-	return (i);
-}*/
-
-size_t	ft_strlcpy(char *dest, char *src, size_t size)
+size_t	ft_strlcpy(char *dst, char *src, size_t size)
 {
 	unsigned int	i;
 	unsigned int	z;
@@ -34,20 +23,21 @@ size_t	ft_strlcpy(char *dest, char *src, size_t size)
 	{
 		while (src [i] != '\0' && i < size - 1)
 		{
-			dest[i] = src[i];
+			dst[i] = src[i];
 			i++;
 		}
-		dest[i] = '\0';
+		dst[i] = '\0';
 	}
 	return (z);
 }
 
-
+/*
  int main () {
    const char src[50] = "abcdefghijkl";
    char dest[50] = "0123456789";
    printf("size = %ld\n%s\n", ft_strlcpy(dest, src, sizeof(char) * 10), dest);
 } 
+*/
 /*
 int	main()
 {
@@ -56,28 +46,3 @@ int	main()
 	printf("%ld", ft_strlcpy(dest, src, 9));
 }
 */
-/*
-#include "libft.h"
-
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
-{
-	size_t	i;
-
-	i = 0;
-	if (dstsize == 0)
-	{
-		while (src[i])
-			i++;
-		return (i);
-	}
-	while (i < dstsize - 1 && src[i] != '\0')
-	{
-		dst[i] = src[i];
-		i++;
-	}
-	if (i < dstsize)
-		dst[i] = '\0';
-	while (src[i] != '\0')
-		i++;
-	return (i);
-}*/

@@ -9,11 +9,7 @@
 /*   Updated: 2022/10/20 17:53:21 by gbarone          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <string.h>
 #include "libft.h"
-#include <stdio.h>
-#include <unistd.h>
 
 static int	ft_mbcount(long int n)
 {

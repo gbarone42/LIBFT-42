@@ -9,8 +9,6 @@
 /*   Updated: 2022/10/10 18:35:23 by gbarone          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-//#include <stdio.h>
 #include "libft.h"
 
 int	ft_atoi(const char *str)

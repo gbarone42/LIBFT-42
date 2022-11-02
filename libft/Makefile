@@ -33,6 +33,7 @@ ft_strmapi.c\
 ft_itoa.c\
 ft_strjoin.c\
 ft_calloc.c\
+ft_split.c\
 
 SRC_BONUS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c \
              ft_lstadd_back.c \

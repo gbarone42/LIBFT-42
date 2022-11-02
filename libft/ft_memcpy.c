@@ -10,27 +10,25 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
-//#include <string.h>
 #include "libft.h"
 
-void	*ft_memcpy(void *dest, const void *src, size_t n)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	size_t		j;
 	char		*i;
 	const char	*k;
 
 	j = 0;
-	i = dest;
+	i = dst;
 	k = src;
 	while (j < n)
 	{
 		i[j] = k[j];
 		j++;
 	}
-	return (dest);
+	return (dst);
 }
-
+/*
  int main () 
 {
    const char src[50] = "abcdefghijk";
@@ -39,4 +37,4 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
    ft_memcpy(&dest, &src, sizeof(char) * 9);
    printf("After = %s\n", dest);
 } 
-
+*/

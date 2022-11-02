@@ -10,8 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
-//#include <string.h>
 #include "libft.h"
 
 void	*ft_memchr(const void	*s, int c, size_t n)
@@ -31,25 +29,6 @@ void	*ft_memchr(const void	*s, int c, size_t n)
 }
 
 /*
-
-void	*ft_memchr(const void *s, int c, size_t n)
-{
-	unsigned int	i;
-
-	i = 0;
-	while (i < n)
-	{
-		if (*((char *) s + i) == c)
-			return (((char *) s + i));
-		i++;
-	}
-	return (0);
-}
-
-
-
-*/
-
 int main(void)
 {
     char  str[] = "www.42seoul.kr";
@@ -59,4 +38,4 @@ int main(void)
     printf("%s\n", ft_memchr(str, '.', 12));
     printf("%s\n", ft_memchr(str, 'k', 14));
     return 0;
-}
+}*/

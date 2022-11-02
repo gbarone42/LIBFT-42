@@ -10,8 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
-//#include <string.h>
 #include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
@@ -35,7 +33,7 @@ char	*ft_strchr(const char *str, int c)
 		str++;
 	}
 	return ((char *)str);
-}*/
+}
 
 int	main(void)
 {
@@ -44,4 +42,4 @@ int	main(void)
 	printf("%s\n", strchr("saikebon", c));
 	return (0);
 }
-
+*/

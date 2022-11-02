@@ -10,20 +10,18 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
-//#include <string.h>
 #include "libft.h"
 
-void	*ft_memmove(void *dest, const void *src, size_t n)
+void	*ft_memmove(void *dst, const void *src, size_t n)
 {
 	char		*s1;
 	const char	*s2;
 	size_t		j;
 
-	s1 = (char *)dest;
+	s1 = (char *)dst;
 	s2 = (const char *)src;
 	j = 0;
-	if (dest > src)
+	if (dst > src)
 	{
 		while (j < n)
 		{
@@ -35,13 +33,13 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	{
 		ft_memcpy(s1, s2, n);
 	}
-	return (dest);
+	return (dst);
 }
-
+/*
 int main () {
    const char src[50] = "abcdefghijk";
    char dest[50] = "0123456789";
    printf("Before memmove dest = %s\n", dest);
    ft_memmove(&dest, &src, sizeof(char) * 2);
    printf("After memmove dest = %s\n", dest);
-} 
+} */

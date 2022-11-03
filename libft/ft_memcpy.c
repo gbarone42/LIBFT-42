@@ -21,6 +21,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	j = 0;
 	i = dst;
 	k = src;
+	if (!dst && !src)
+		return (NULL);
 	while (j < n)
 	{
 		i[j] = k[j];
